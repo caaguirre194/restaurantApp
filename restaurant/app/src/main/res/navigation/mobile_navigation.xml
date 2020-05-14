@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pedido">
+
+    <fragment
+        android:id="@+id/nav_pedido"
+        android:name="com.e.restaurant.ui.pedido.PedidoFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_pedido" />
+
+    <fragment
+        android:id="@+id/nav_entrega"
+        android:name="com.e.restaurant.ui.entrega.EntregaFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_entrega" />
+
+    <fragment
+        android:id="@+id/nav_carta"
+        android:name="com.e.restaurant.ui.carta.CartaFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/nav_reporte_pedido"
+        android:name="com.e.restaurant.ui.reportePedido.ReportePedidoFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_reporte_pedido" />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.e.restaurant.ui.menu.MenuFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_carta" />
+
+    <fragment
+        android:id="@+id/nav_reporte_venta"
+        android:name="com.e.restaurant.ui.reporteVenta.ReporteVentaFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_reporte_venta" />
+</navigation>

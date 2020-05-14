@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pedido"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_entrega"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_carta"
+            android:icon="@drawable/book"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/pen"
+            android:title="@string/menu_share" />
+    </group>
+
+    <item android:title="Reportes">
+        <menu>
+            <item
+                android:id="@+id/nav_reporte_pedido"
+                android:icon="@drawable/report"
+                android:title="@string/menu_tools" />
+            <item
+                android:id="@+id/nav_reporte_venta"
+                android:icon="@drawable/money"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>
