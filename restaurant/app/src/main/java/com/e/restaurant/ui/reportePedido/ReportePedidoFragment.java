@@ -64,7 +64,8 @@ public class ReportePedidoFragment extends Fragment {
                         String usuario = json.getString("nombreUsuario");
                         String alimento = json.getString("nombreAlimento");
                         String bebida = json.getString("nombreBebida");
-                        pedidos[i] = id + "- "+ usuario+ "- "+ alimento+ "- "+bebida;
+                        String total = json.getString("total");
+                        pedidos[i] = id + "- "+ usuario+ ": $"+total;
                     }
 
                 } catch (ExecutionException e) {

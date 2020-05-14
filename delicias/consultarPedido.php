@@ -4,7 +4,8 @@ include_once("conexion.php");
 $con=mysqli_connect($host,$usuario,$clave,$bd) or die('Fallo la conexion');
 mysqli_set_charset($con,"utf8");
 //2. Tomar los campos provenientes de la tabla
-$consulta = "SELECT p.id, u.nombre AS nombreUsuario, a.nombre AS nombreAlimento, b.nombre AS nombreBebida
+
+$consulta = "SELECT p.id, u.nombre AS nombreUsuario, a.nombre AS nombreAlimento, b.nombre AS nombreBebida, a.precio AS precioAlimento, b.precio AS precioBebida, a.precio+b.precio AS total
 FROM $bd.pedido AS p, $bd.usuario AS u, $bd.alimento AS a, $bd.bebida AS b
 WHERE p.usuario = u.id AND p.alimento = a.id AND p.bebida = b.id";
 
